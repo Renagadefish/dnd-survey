@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D coordination form</title>
+  </head>
+  
+  <body>
+    <h1 id="title">D&D Coordination Form</h1>
+    <p id="description">Let's coordinate a game and get to it!</p>
+
+    <div class="survey">
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name-label"> Enter your name:
+            <input required id="name" type="text" name="name-label" placeholder="Name goes here">
+          </label>
+          <div>
+          </div>        
+          <label id="email-label" for="email-label">Enter your email:
+            <input required id="email" type="email" placeholder="email goes here" >
+          </label>
+          <div>
+          </div>
+          <label id="number-label" for="number-label">Type in your favorite number:
+            <input id="number" type="number" min="1" max="99999" placeholder="I was forced to add this">  
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown">What time works best for you?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Saturday afternoon</option>
+              <option value="2">Saturday early evening</option>
+              <option value="3">Sunday afternoon</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+        </fieldset>
+          
+        <fieldset>
+          <legend>What is your forcasted playtime?</legend>
+          <input id="1 hour" type="radio" name="playtime" value="1" checked><label>One Hour</label>
+          <input id="2 hour" type="radio" name="playtime" value="2" ><label>Two Hours</label>
+          <input id="3 hour" type="radio" name="playtime" value="3" ><label>Three Hours</label>
+          <input id="4 hour" type="radio" name="playtime" value="4" ><label>Four Hours</label>
+          <input id="<4 hour" type="radio" name="playtime" value="5" ><label> 4+ Hours</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Feeling Snacky?</legend>
+          <input id="popcorn" type="checkbox" name="snacks" value="1" ><label>Popcorn</label>
+          <input id="doritos" type="checkbox" name="snacks" value="2" ><label>Doritos</label>
+          <input id="carrot-sticks" type="checkbox" name="snacks" value="3" ><label>Carrot Sticks</label>
+          <input id="chicken nuggies" type="checkbox" name="snacks" value="4" ><label>Chicken Nuggies</label>
+          <input id="apple-slices" type="checkbox" name="snacks" value="5" ><label> Apple Slices</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="allergies">Add anything you think should be added!</label>
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Allergies, game requests, otter facts, ect."></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
